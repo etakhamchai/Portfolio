@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edward Takhamchai – Portfolio</title>
+  <meta name="description" content="Portfolio of Edward Takhamchai – Digital Marketing & Web (SEO, Content, Web Design).">
+  <style>
+    :root{--brand:#047857;--ink:#0f172a;--muted:#64748b;--card:#f8fafc;--radius:16px;--shadow:0 10px 30px rgba(2,6,23,.08)}
+    html,body{margin:0;background:#fff;color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    .wrap{max-width:1100px;margin:auto;padding:clamp(16px,3vw,28px)}
+    header h1{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin:.2rem 0}
+    header p.role{color:#10b981;font-weight:600;margin:.2rem 0 1rem}
+    header .meta{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px}
+    .filters{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+    .filters button{border:1px solid #e5e7eb;background:#fff;border-radius:999px;padding:8px 12px;cursor:pointer}
+    .filters button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 4;background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .card img{width:100%;height:200px;object-fit:cover}
+    .card .body{padding:14px 14px 16px}
+    .card h3{margin:.2rem 0;font-size:18px}
+    .tags{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+    .tag{font-size:12px;border:1px solid #e5e7eb;border-radius:999px;padding:4px 8px;color:#111827;background:#fff}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid #e5e7eb;background:#fff;color:#111827;text-decoration:none}
+    .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+    .cta{margin-top:auto;display:flex;gap:10px}
+    footer{margin-top:28px;color:var(--muted);text-align:center;font-size:14px}
+    @media (max-width:1000px){.card{grid-column:span 6}}
+    @media (max-width:640px){.card{grid-column:span 12}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Edward Takhamchai</h1>
+      <p class="role">Digital Marketing & Web – SEO | Content | Web Design</p>
+      <div class="meta">
+        <span>📍 Sydney, Australia</span> • 
+        <a href="mailto:edward@example.com">✉️ edward@example.com</a> • 
+        <a href="tel:+61400000000">📞 +61 400 000 000</a>
+      </div>
+      <p style="max-width:800px;color:#334155;margin-top:10px">
+        I build search‑smart websites and content that turn attention into action. Fast iterations, clean UX, and data‑driven decisions.
+      </p>
+    </header>
+
+    <nav class="filters" aria-label="Filters">
+      <button class="filter" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" data-filter="Web Design">Web Design</button>
+      <button class="filter" data-filter="SEO">SEO</button>
+      <button class="filter" data-filter="Content">Content</button>
+      <button class="filter" data-filter="Research">Research</button>
+      <button class="filter" data-filter="CRO">CRO</button>
+    </nav>
+
+    <section class="grid" id="projects">
+      <article class="card" data-tags="Web Design,SEO,Local Business">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400&auto=format&fit=crop" alt="Dynamic Landscaping">
+        <div class="body">
+          <h3>Dynamic Landscaping & Maintenance</h3>
+          <p style="color:#475569;font-size:14px;margin:.2rem 0 .4rem">Local service site + SEO foundations</p>
+          <div class="tags">
+            <span class="tag">Web Design</span><span class="tag">SEO</span><span class="tag">Local Business</span>
+          </div>
+          <p style="font-size:14px;color:#0f172a">Conversion‑focused site with service schema, suburb pages, and fast load. Monthly SEO cadence and reporting.</p>
+          <ul style="font-size:14px;color:#0f172a;padding-left:18px;margin:.6rem 0">
+            <li>&lt;1s LCP (desktop) on key pages</li>
+            <li>Service + LocalBusiness schema</li>
+            <li>Query‑led content (Ryde, Hills)</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary" href="https://dynamiclandscaping.au/" target="_blank" rel="noopener">View live</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-tags="Content,SEO,Social">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop" alt="TripKliq Content Engine">
+        <div class="body">
+          <h3>TripKliq — 60‑Day Content Engine</h3>
+          <p style="color:#475569;font-size:14px;margin:.2rem 0 .4rem">SEO + TikTok/IG Reels growth system</p>
+          <div class="tags">
+            <span class="tag">Content</span><span class="tag">SEO</span><span class="tag">Social</span>
+          </div>
+          <p style="font-size:14px;color:#0f172a">Modular content calendar with voiceover scripts, hooks, and repurposing rules. Analytics loop for weekly pivots.</p>
+          <ul style="font-size:14px;color:#0f172a;padding-left:18px;margin:.6rem 0">
+            <li>Daily short‑form templates + CTA variants</li>
+            <li>Hashtag & keyword clusters</li>
+            <li>GA4 + Sheets engagement dashboard</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card" data-tags="Research,Strategy,Presentation">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop" alt="MQBS WOM Research">
+        <div class="body">
+          <h3>MQBS — WOM Research Pack</h3>
+          <p style="color:#475569;font-size:14px;margin:.2rem 0 .4rem">Qual + survey design, insights → IMC</p>
+          <div class="tags">
+            <span class="tag">Research</span><span class="tag">Strategy</span><span class="tag">Presentation</span>
+          </div>
+          <p style="font-size:14px;color:#0f172a">Mapped triggers for positive WOM across student journey; recommended IMC actions and measurement plan.</p>
+          <ul style="font-size:14px;color:#0f172a;padding-left:18px;margin:.6rem 0">
+            <li>Interview protocol + Likert scales</li>
+            <li>Persona‑to‑touchpoint heatmap</li>
+            <li>3‑slide exec deck + 1‑pager</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card" data-tags="CRO,UX,E‑commerce">
+        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1400&auto=format&fit=crop" alt="Storefront UX Tune‑Up">
+        <div class="body">
+          <h3>Storefront UX Tune‑Up</h3>
+          <p style="color:#475569;font-size:14px;margin:.2rem 0 .4rem">Checkout friction removal, CRO quick‑wins</p>
+          <div class="tags">
+            <span class="tag">CRO</span><span class="tag">UX</span><span class="tag">E‑commerce</span>
+          </div>
+          <p style="font-size:14px;color:#0f172a">Audited PDP & checkout; streamlined variants, added trust signals, and compressed media for speed.</p>
+          <ul style="font-size:14px;color:#0f172a;padding-left:18px;margin:.6rem 0">
+            <li>Variant clarity + size guide modal</li>
+            <li>Sticky ATC + shipping estimate</li>
+            <li>CLS/LCP vitals improved</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <footer>© 2025 Edward Takhamchai</footer>
+  </main>
+
+  <script>
+    // simple filter logic
+    const buttons=[...document.querySelectorAll(".filter")];
+    const cards=[...document.querySelectorAll(".card")];
+    buttons.forEach(btn=>btn.addEventListener("click",()=>{
+      buttons.forEach(b=>b.setAttribute("aria-pressed","false"));
+      btn.setAttribute("aria-pressed","true");
+      const f=btn.dataset.filter;
+      cards.forEach(c=>{
+        const tags=c.dataset.tags.split(",").map(s=>s.trim());
+        const show = f==="all" || tags.includes(f);
+        c.style.display = show ? "flex" : "none";
+      });
+    }));
+  </script>
+</body>
+</html>
